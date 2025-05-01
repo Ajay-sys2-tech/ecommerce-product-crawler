@@ -1,24 +1,26 @@
-🕷️ E-Commerce Product URL Crawler
+**🕷️ E-Commerce Product URL Crawler**
+
 This is an asynchronous web crawler designed to extract product page URLs from major fashion e-commerce websites.
 
 It uses a hybrid strategy:
 
-First, it attempts to crawl using aiohttp + BeautifulSoup for speed.
+- First, it attempts to crawl using aiohttp + BeautifulSoup for speed.
 
-If no product URLs are found, it falls back to Playwright for JS-rendered content (e.g., infinite scroll or pagination).
+- If no product URLs are found, it falls back to Playwright for JS-rendered content (e.g., infinite scroll or pagination).
 
 📦 Features
-🔍 Domain-specific configurations for handling different website structures.
 
-⚡ Asynchronous crawling with depth control.
+- 🔍 Domain-specific configurations for handling different website structures.
 
-🧠 Fallback with Playwright for dynamic content and JavaScript-heavy pages.
+- ⚡ Asynchronous crawling with depth control.
 
-🔗 Extracts valid internal product URLs based on regex patterns.
+- 🧠 Fallback with Playwright for dynamic content and JavaScript-heavy pages.
 
-📄 Saves crawl results in JSON with timestamps.
+- 🔗 Extracts valid internal product URLs based on regex patterns.
 
-🔒 Respects domain limits and uses a user-agent header.
+- 📄 Saves crawl results in JSON with timestamps.
+
+- 🔒 Respects domain limits and uses a user-agent header.
 
 📁 Project Structure
 ```
